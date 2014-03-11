@@ -1,5 +1,5 @@
 //
-//  HPNavigationController.h
+//  JRNavigationController.h
 //  HttpRequestDemo
 //
 //  Created by weile on 14-3-11.

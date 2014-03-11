@@ -22,6 +22,7 @@
     NSParameterAssert(requestCompletionBlock);
     NSParameterAssert(requestFailureBlock);
     if (self = [super initWithURL:[NSURL URLWithString:@""]]) {
+        [self setTimeOutSeconds:30.0f];
         _requestCompletionBlock = requestCompletionBlock;
         _requestFailureBlock = requestFailureBlock;
     }

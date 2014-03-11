@@ -18,7 +18,7 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    
+    NSLog(@" YES :%d",YES);
     RootViewController *viewController = [[RootViewController alloc] init];
     [viewController setTitle:@"Root"];
     JRNavigationController *navigationController = [[JRNavigationController alloc] initWithRootViewController:viewController];

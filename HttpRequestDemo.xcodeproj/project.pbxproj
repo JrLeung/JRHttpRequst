@@ -49,6 +49,7 @@
 		73793D0D18CEB2F8006974DF /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73793D0B18CEB2F8006974DF /* MainViewController.xib */; };
 		73793D1018CEDECE006974DF /* WeatherRequestGet.m in Sources */ = {isa = PBXBuildFile; fileRef = 73793D0F18CEDECE006974DF /* WeatherRequestGet.m */; };
 		73793D1318CEEC04006974DF /* JRHttpRequestError.m in Sources */ = {isa = PBXBuildFile; fileRef = 73793D1218CEEC04006974DF /* JRHttpRequestError.m */; };
+		73793D1718CEFA0D006974DF /* JRBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 73793D1618CEFA0D006974DF /* JRBaseModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -131,6 +132,9 @@
 		73793D0F18CEDECE006974DF /* WeatherRequestGet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherRequestGet.m; sourceTree = "<group>"; };
 		73793D1118CEEC04006974DF /* JRHttpRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRHttpRequestError.h; sourceTree = "<group>"; };
 		73793D1218CEEC04006974DF /* JRHttpRequestError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRHttpRequestError.m; sourceTree = "<group>"; };
+		73793D1518CEFA0D006974DF /* JRBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRBaseModel.h; sourceTree = "<group>"; };
+		73793D1618CEFA0D006974DF /* JRBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRBaseModel.m; sourceTree = "<group>"; };
+		73793D1818CF0383006974DF /* JRHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRHttpRequest.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +295,7 @@
 		73793CC118CEA4DD006974DF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				73793D1418CEF9F6006974DF /* Model */,
 				73793CC218CEA4DD006974DF /* CoreHttpRequest */,
 				73793CC318CEA4DD006974DF /* View */,
 				73793CC418CEA4DD006974DF /* ViewController */,
@@ -301,6 +306,7 @@
 		73793CC218CEA4DD006974DF /* CoreHttpRequest */ = {
 			isa = PBXGroup;
 			children = (
+				73793D1818CF0383006974DF /* JRHttpRequest.h */,
 				73793D1118CEEC04006974DF /* JRHttpRequestError.h */,
 				73793D1218CEEC04006974DF /* JRHttpRequestError.m */,
 				73793CE918CEA9BB006974DF /* JRHttpRequestGet.h */,
@@ -362,6 +368,15 @@
 				73793CFF18CEB260006974DF /* AFURLSessionManager.m */,
 			);
 			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		73793D1418CEF9F6006974DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				73793D1518CEFA0D006974DF /* JRBaseModel.h */,
+				73793D1618CEFA0D006974DF /* JRBaseModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,6 +466,7 @@
 				73793CBB18CEA4C8006974DF /* ASIInputStream.m in Sources */,
 				73793D0618CEB260006974DF /* AFURLRequestSerialization.m in Sources */,
 				73793CB618CEA4C8006974DF /* ASIDataCompressor.m in Sources */,
+				73793D1718CEFA0D006974DF /* JRBaseModel.m in Sources */,
 				73793D1318CEEC04006974DF /* JRHttpRequestError.m in Sources */,
 				732612BB18CEA3DC00CFE0A2 /* main.m in Sources */,
 				73793CC018CEA4C8006974DF /* SVProgressHUD.m in Sources */,

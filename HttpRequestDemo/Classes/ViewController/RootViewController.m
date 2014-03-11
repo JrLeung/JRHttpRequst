@@ -12,7 +12,7 @@
 #import "AFNetworking.h"
 #import "MainViewController.h"
 #import "WeatherRequestGet.h"
-
+#import "JRBaseModel.h"
 
 @interface RootViewController ()
 
@@ -36,6 +36,8 @@ static NSString *weatherUrl = @"http://m.weather.com.cn/data/101011500.html";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    JRBaseModel *model = [[JRBaseModel alloc] initWithJsonArray:nil];
+    NSLog(@"123  :%@",[model formatJsonStringValue:@"123"]);
     // Do any additional setup after loading the view from its nib.
 }
 
